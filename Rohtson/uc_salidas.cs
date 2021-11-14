@@ -16,5 +16,10 @@ namespace Rohtson
         {
             InitializeComponent();
         }
+
+        private void uc_salidas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

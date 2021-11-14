@@ -29,5 +29,10 @@ namespace Rohtson
             panel_nuevo.BringToFront();
             Panel_registrar.Visible = false;
         }
+
+        private void uc_gastos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

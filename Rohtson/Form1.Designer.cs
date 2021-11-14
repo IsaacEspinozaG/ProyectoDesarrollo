@@ -48,11 +48,11 @@
             this.fecha = new System.Windows.Forms.Label();
             this.Fecha_hora = new System.Windows.Forms.Timer(this.components);
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.inicio1 = new Rohtson.Inicio();
-            this.uc_cliente1 = new Rohtson.Uc_cliente();
-            this.uc_pedidos1 = new Rohtson.uc_pedidos();
-            this.uc_gastos1 = new Rohtson.uc_gastos();
             this.uc_salidas1 = new Rohtson.uc_salidas();
+            this.uc_gastos1 = new Rohtson.uc_gastos();
+            this.uc_pedidos1 = new Rohtson.uc_pedidos();
+            this.uc_cliente1 = new Rohtson.Uc_cliente();
+            this.inicio1 = new Rohtson.Inicio();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
@@ -67,7 +67,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(119)))));
+            this.guna2Panel1.BackColor = System.Drawing.Color.White;
             this.guna2Panel1.Controls.Add(this.btn_inicio);
             this.guna2Panel1.Controls.Add(this.guna2Separator4);
             this.guna2Panel1.Controls.Add(this.guna2Separator3);
@@ -245,56 +245,57 @@
             this.guna2PictureBox1.TabIndex = 5;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // inicio1
-            // 
-            this.inicio1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.inicio1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inicio1.Location = new System.Drawing.Point(0, 0);
-            this.inicio1.Name = "inicio1";
-            this.inicio1.Size = new System.Drawing.Size(1416, 718);
-            this.inicio1.TabIndex = 2;
-            // 
-            // uc_cliente1
-            // 
-            this.uc_cliente1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.uc_cliente1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_cliente1.Location = new System.Drawing.Point(0, 0);
-            this.uc_cliente1.Name = "uc_cliente1";
-            this.uc_cliente1.Size = new System.Drawing.Size(1416, 718);
-            this.uc_cliente1.TabIndex = 0;
-            // 
-            // uc_pedidos1
-            // 
-            this.uc_pedidos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.uc_pedidos1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_pedidos1.Location = new System.Drawing.Point(0, 0);
-            this.uc_pedidos1.Name = "uc_pedidos1";
-            this.uc_pedidos1.Size = new System.Drawing.Size(1416, 718);
-            this.uc_pedidos1.TabIndex = 1;
-            // 
-            // uc_gastos1
-            // 
-            this.uc_gastos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
-            this.uc_gastos1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_gastos1.Location = new System.Drawing.Point(0, 0);
-            this.uc_gastos1.Name = "uc_gastos1";
-            this.uc_gastos1.Size = new System.Drawing.Size(1416, 718);
-            this.uc_gastos1.TabIndex = 3;
-            // 
             // uc_salidas1
             // 
-            this.uc_salidas1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
+            this.uc_salidas1.BackColor = System.Drawing.Color.Orange;
             this.uc_salidas1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uc_salidas1.Location = new System.Drawing.Point(0, 0);
             this.uc_salidas1.Name = "uc_salidas1";
             this.uc_salidas1.Size = new System.Drawing.Size(1416, 718);
             this.uc_salidas1.TabIndex = 4;
             // 
+            // uc_gastos1
+            // 
+            this.uc_gastos1.BackColor = System.Drawing.Color.Orange;
+            this.uc_gastos1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_gastos1.ForeColor = System.Drawing.Color.Black;
+            this.uc_gastos1.Location = new System.Drawing.Point(0, 0);
+            this.uc_gastos1.Name = "uc_gastos1";
+            this.uc_gastos1.Size = new System.Drawing.Size(1416, 718);
+            this.uc_gastos1.TabIndex = 3;
+            // 
+            // uc_pedidos1
+            // 
+            this.uc_pedidos1.BackColor = System.Drawing.Color.Orange;
+            this.uc_pedidos1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_pedidos1.Location = new System.Drawing.Point(0, 0);
+            this.uc_pedidos1.Name = "uc_pedidos1";
+            this.uc_pedidos1.Size = new System.Drawing.Size(1416, 718);
+            this.uc_pedidos1.TabIndex = 1;
+            // 
+            // uc_cliente1
+            // 
+            this.uc_cliente1.BackColor = System.Drawing.Color.Orange;
+            this.uc_cliente1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_cliente1.Location = new System.Drawing.Point(0, 0);
+            this.uc_cliente1.Name = "uc_cliente1";
+            this.uc_cliente1.Size = new System.Drawing.Size(1416, 718);
+            this.uc_cliente1.TabIndex = 0;
+            // 
+            // inicio1
+            // 
+            this.inicio1.BackColor = System.Drawing.Color.Orange;
+            this.inicio1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inicio1.Location = new System.Drawing.Point(0, 0);
+            this.inicio1.Name = "inicio1";
+            this.inicio1.Size = new System.Drawing.Size(1416, 718);
+            this.inicio1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(30)))), ((int)(((byte)(43)))));
+            this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(1584, 861);
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.Hora);
@@ -324,12 +325,10 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox btn_close;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Uc_cliente uc_cliente1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label fecha;
         private System.Windows.Forms.Label Hora;
         private System.Windows.Forms.Timer Fecha_hora;
-        private uc_pedidos uc_pedidos1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator4;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
@@ -337,8 +336,10 @@
         private Guna.UI2.WinForms.Guna2ImageButton btn_salidas;
         private Guna.UI2.WinForms.Guna2ImageButton btn_gastos;
         private Guna.UI2.WinForms.Guna2ImageButton btn_inicio;
-        private Inicio inicio1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Inicio inicio1;
+        private Uc_cliente uc_cliente1;
+        private uc_pedidos uc_pedidos1;
         private uc_gastos uc_gastos1;
         private uc_salidas uc_salidas1;
     }

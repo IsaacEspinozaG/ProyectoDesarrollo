@@ -28,7 +28,11 @@ namespace Rohtson
         {
             panel_mod.BringToFront(); 
             panel_agre.Visible = false;
-        }            
-            
+        }
+
+        private void Uc_cliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
