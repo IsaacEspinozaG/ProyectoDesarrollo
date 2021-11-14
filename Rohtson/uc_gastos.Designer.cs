@@ -57,9 +57,11 @@
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Panel_registrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel_nuevo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -452,6 +454,17 @@
             this.guna2Elipse5.BorderRadius = 30;
             this.guna2Elipse5.TargetControl = this.panel_nuevo;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Rohtson.Properties.Resources.LogoRohtson;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-150, 499);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(777, 301);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 22;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // uc_gastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,6 +476,7 @@
             this.Controls.Add(this.Panel_registrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel_nuevo);
+            this.Controls.Add(this.guna2PictureBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "uc_gastos";
             this.Size = new System.Drawing.Size(1416, 718);
@@ -472,6 +486,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.panel_nuevo.ResumeLayout(false);
             this.panel_nuevo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,5 +519,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
