@@ -65,11 +65,12 @@
             // 
             // bntEntrar
             // 
+            this.bntEntrar.BackColor = System.Drawing.Color.Black;
             this.bntEntrar.CheckedState.Parent = this.bntEntrar;
             this.bntEntrar.CustomImages.Parent = this.bntEntrar;
-            this.bntEntrar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bntEntrar.FillColor = System.Drawing.Color.Black;
             this.bntEntrar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bntEntrar.ForeColor = System.Drawing.Color.Black;
+            this.bntEntrar.ForeColor = System.Drawing.Color.Orange;
             this.bntEntrar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.bntEntrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.bntEntrar.HoverState.Parent = this.bntEntrar;
@@ -107,6 +108,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(187, 235);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(243, 20);
             this.textBox2.TabIndex = 13;
             // 
@@ -116,6 +118,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(243, 20);
             this.textBox1.TabIndex = 12;
+            this.textBox1.Text = "Claudia";
             // 
             // lblTitulo
             // 
@@ -150,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(631, 423);
             this.Controls.Add(this.btnSalirProg);
             this.Controls.Add(this.linkLogin);

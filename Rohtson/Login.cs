@@ -24,9 +24,17 @@ namespace Rohtson
 
         private void bntEntrar_Click(object sender, EventArgs e)
         {
-            Form Menu = new Form1();
-            Menu.Show();
-            this.Hide();
+            if ((textBox1.Text == "Claudia") && (textBox2.Text == "1234"))
+            {
+                Form Menu = new Form1();
+                Menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+            }
+            
         }
     }
 }
