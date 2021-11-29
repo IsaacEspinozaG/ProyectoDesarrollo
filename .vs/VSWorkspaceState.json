@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Rohtson"
+    "\\Rohtson",
+    "\\Rohtson\\Controlador"
   ],
-  "SelectedNode": "\\Rohtson\\Uc_cliente.cs",
+  "SelectedNode": "\\Rohtson\\Controlador\\ClienteController.cs",
   "PreviewInSolutionExplorer": false
 }

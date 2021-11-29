@@ -9,18 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using Rohtson.Controlador;
+using Rohtson.Modelo.DAO;
 
 namespace Rohtson
 {
-    public partial class Uc_cliente : UserControl
+    public partial class Uc_cliente : UserControl 
     {
+        
         public Uc_cliente()
         {
             InitializeComponent();
+            ClienteController ctrl = new ClienteController(this);
             panel_agre.BringToFront();
         }
         SqlConnection Conexion = new SqlConnection("SERVER=DESKTOP-I6M7LDG;DATABASE=Rohtson;Integrated security=true");
-        //string cnnstring = System.Configuration.ConfigurationManager.ConnectionStrings[""].ConnectionString;
 
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
@@ -35,24 +38,7 @@ namespace Rohtson
             panel_agre.Visible = false;
         }
 
-        private void Uc_cliente_Load(object sender, EventArgs e)
-        {
-            Conexion.Open();
-            SqlCommand cmd = Conexion.CreateCommand();
-
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * from Cliente";
-            cmd.ExecuteNonQuery();
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
-            
-            dgvClientes.DataSource = dt;
-
-            Conexion.Close();
-        }
-
+        private void Uc_cliente_Load(object sender, EventArgs e) { }
 
         //Validar que solo se puedan escribir 10 digitos
         private void txtTelefonoCliente_KeyPress(object sender, KeyPressEventArgs e)
@@ -74,7 +60,6 @@ namespace Rohtson
             }
         }
 
-
         //Validar si el correo tiene el formato adecuado
         public Boolean email_bien_escrito(String email)
         {
@@ -94,6 +79,26 @@ namespace Rohtson
             else
             {
                 return false;
+            }
+        }
+
+        //Validar que solo se puedan numero en el campo telefono al modificar
+        private void txtModTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Para obligar a que sólo se introduzcan números
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+              if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //el resto de teclas pulsadas se desactivan
+                e.Handled = true;
             }
         }
 
@@ -138,7 +143,7 @@ namespace Rohtson
                         }
 
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "Select * from Cliente";
+                        cmd.CommandText = "Select * from CLIENTES";
                         cmd.ExecuteNonQuery();
 
                         DataTable dt = new DataTable();
@@ -200,7 +205,7 @@ namespace Rohtson
                         }
 
                         cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "Select * from Cliente";
+                        cmd.CommandText = "Select * from CLIENTES";
                         cmd.ExecuteNonQuery();
 
                         DataTable dt = new DataTable();
@@ -220,25 +225,7 @@ namespace Rohtson
             }
         }
 
-        //Validar que solo se puedan numero en el campo telefono al modificar
-        private void txtModTelefono_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //Para obligar a que sólo se introduzcan números
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-              if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                //el resto de teclas pulsadas se desactivan
-                e.Handled = true;
-            }
-        }
+        
     }
 }
 
